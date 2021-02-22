@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Analyser</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Dog Species Recogniser</h1>
+        <p>Upload your image file below. Supported filetypes are:
+            <li>PNG</li>
+            <li>JPEG</li>
+        </p>
+    </div>
+
+    <div class="image-container">
+        <input input type="file" accept="image/jpeg, image/png" name="image" id="file" onchange="loadFile(event)" style="display: none;" />
+        <label for="file" class="upload-button">Upload Image</label>
+
+        <div class="user-image">
+            <img id="output" width="300" />
+        </div>
+
+    </div>
+
+    <div class="results" id="results">
+        <p>The algorithm has recognised your dog to be: <span id="ml-result"></span></p>
+        <p>Confidence level: <span id="confidence-level"></span></p>
+    </div>
+
+
+    <script src="sketch.js"></script>
+
+</body>
+</html>

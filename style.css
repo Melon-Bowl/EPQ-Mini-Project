@@ -1,0 +1,71 @@
+html {
+    background-color: #434451;
+    color: #ffffff;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 21px;
+    background: #434451;
+    box-shadow:  9px 9px 18px #2c2c35, 
+             -9px -9px 18px #5a5c6d;
+}
+
+.upload-button {
+    cursor: pointer;
+    color: rgb(50, 238, 238);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    background: linear-gradient(145deg, #3e7f80, #346b6c);
+    box-shadow:  5px 5px 6px #275152, 
+             -5px -5px 6px #4d9d9e;
+}
+
+.upload-button:active {
+    cursor: pointer;
+    color: rgb(50, 238, 238);
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    background: #3a7778;
+    box-shadow: inset 5px 5px 10px #275152, 
+            inset -5px -5px 10px #4d9d9e;
+}
+
+.image-container {
+    text-align: center;
+    padding: 10px;
+    max-width: fit-content;
+    min-width: 400px;
+    min-height: 400px;
+    margin: 0 auto;
+    border-radius: 21px;
+    background: #434451;
+    box-shadow:  9px 9px 18px #2c2c35, 
+             -9px -9px 18px #5a5c6d;
+}
+
+
+.user-image {
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.results {
+    text-align: center;
+    padding: 10px;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 21px;
+    background: #434451;
+    box-shadow:  9px 9px 18px #2c2c35, 
+             -9px -9px 18px #5a5c6d;
+}
